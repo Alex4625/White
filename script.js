@@ -1,5 +1,5 @@
 // Message content for typing animation in the digital letter.
-const letterMessage = `Happy White Day, My Love 🤍
+const letterMessage = `Happy White Day, Nonaa Sayangggkuu 🤍
 
 Today may just be one day on the calendar,
 but for me it is a small chance to remind you
