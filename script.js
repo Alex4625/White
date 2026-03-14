@@ -23,7 +23,6 @@ Alex`;
 const openCardBtn = document.getElementById('openCardBtn');
 const cardSection = document.getElementById('card-section');
 const typedLetter = document.getElementById('typedLetter');
-const bgMusic = document.getElementById('bgMusic');
 
 let typingStarted = false;
 
@@ -65,17 +64,9 @@ document.querySelectorAll('.reveal').forEach((section) => observer.observe(secti
 
 // Landing button interaction:
 // 1) Fade out landing,
-// 2) Start background music,
-// 3) Smooth scroll to greeting card.
-openCardBtn.addEventListener('click', async () => {
+// 2) Smooth scroll to greeting card.
+openCardBtn.addEventListener('click', () => {
   document.body.classList.add('card-opened');
-
-  try {
-    bgMusic.volume = 0.5;
-    await bgMusic.play();
-  } catch (_error) {
-    // Autoplay can be blocked by some browser policies.
-  }
 
   setTimeout(() => {
     cardSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
