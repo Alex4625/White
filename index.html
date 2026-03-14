@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy White Day 🤍</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Global floating heart particles -->
+    <div class="heart-particles" aria-hidden="true"></div>
+
+    <!-- Hidden background music player -->
+    <audio id="bgMusic" loop preload="none" src="music/romantic.mp3"></audio>
+
+    <main>
+      <!-- SECTION 1: Landing screen -->
+      <section class="landing" id="landing">
+        <div class="floating-hearts" aria-hidden="true">
+          <span>🤍</span><span>💗</span><span>🤍</span><span>💞</span><span>🤍</span>
+        </div>
+        <div class="landing-content">
+          <h1>Happy White Day 🤍</h1>
+          <p>A small message for someone very special</p>
+          <button id="openCardBtn" class="romantic-btn">Open the Card</button>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Digital greeting card -->
+      <section class="section reveal" id="card-section">
+        <div class="card letter-card">
+          <h2>My Letter to You</h2>
+          <p id="typedLetter" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <!-- SECTION 3: White Day fun fact -->
+      <section class="section reveal" id="fact-section">
+        <div class="card fact-card">
+          <h2>Did You Know? 🤍</h2>
+          <div class="fact-hearts" aria-hidden="true">
+            <span>♡</span>
+            <span>♥</span>
+            <span>♡</span>
+          </div>
+          <p>
+            White Day is celebrated one month after Valentine's Day.<br /><br />
+            The tradition started in Japan, where people give return gifts to
+            someone who gave them chocolates on Valentine's Day.<br /><br />
+            There is also a concept called "sanbai gaeshi", which means the
+            return gift should be three times more special.<br /><br />
+            But honestly, the best gift is simply reminding someone how much they
+            mean to you.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 4: Final message -->
+      <section class="section reveal final-section" id="final-section">
+        <div class="floating-hearts" aria-hidden="true">
+          <span>💗</span><span>🤍</span><span>💖</span><span>🤍</span><span>💕</span>
+        </div>
+        <div class="final-message">
+          <h2>"Thank you for being part of my story."</h2>
+          <p>Happy White Day 🤍</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
